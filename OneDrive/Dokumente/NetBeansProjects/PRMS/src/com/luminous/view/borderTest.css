@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 27, 2017, 2:06:29 PM
+    Author     : Luminous
+*/
+
+.bordered-title {
+   
+    -fx-background-color: #ddd;
+    -fx-translate-y: -16;
+    -fx-padding: 2 14 2 14;
+}
+
+.bordered-border {
+    -fx-content-display: top;
+    -fx-border-insets: 20 15 15 15;
+    -fx-background-color: transparent;
+    -fx-border-color: #999;
+    -fx-border-width:2;
+    -fx-background-radius: 5;
+}
+

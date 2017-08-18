@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:id="caseReportBasePane" prefHeight="434.0" prefWidth="630.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.luminous.ctrl.ReportCrime">
+   <content>
+      <FlowPane fx:id="caseReportContent" alignment="TOP_CENTER" orientation="VERTICAL" style="-fx-background-color: #ccc;">
+         <children>
+            <VBox spacing="10.0" style="-fx-background-color: white;">
+               <children>
+                  <TitledPane collapsible="false" text="Complaint Details">
+                     <content>
+                        <HBox spacing="16.0">
+                           <children>
+                              <VBox spacing="16.0">
+                                 <children>
+                                    <TextField fx:id="fullNameField" promptText="Full Name" />
+                                    <TextField fx:id="pNumberField" promptText="Phone Number" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="16.0">
+                                 <children>
+                                    <ComboBox fx:id="genderCheckBox" prefHeight="33.0" prefWidth="150.0" promptText="Select Gender" />
+                                    <TextArea fx:id="addressField" prefHeight="100.0" prefWidth="330.0" promptText="Address" style="-fx-border-width: 2; -fx-border-color: #999;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="24.0" left="20.0" right="20.0" top="24.0" />
+                           </padding>
+                        </HBox>
+                     </content>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TitledPane>
+                  <VBox styleClass="bordered-border" stylesheets="@borderTest.css">
+                     <children>
+                        <Label style="-fx-background-radius: 5px;" styleClass="bordered-title" text="Case Details">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <VBox spacing="10.0">
+                           <children>
+                              <ComboBox fx:id="caseCatCheckBox" prefHeight="33.0" prefWidth="210.0" promptText="Select Case Category" />
+                              <TextArea fx:id="statementField" prefHeight="150.0" prefWidth="530.0" promptText="Enter Statement here" style="-fx-border-width: 2; -fx-border-color: #999;" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="TOP_CENTER" prefWidth="608.0" spacing="16.0" style="-fx-background-color: #ddd; -fx-background-radius: 5;">
+                     <children>
+                        <Button fx:id="rSubmit" mnemonicParsing="false" styleClass="green-button" text="SUBMIT" />
+                        <Button fx:id="resetBut" mnemonicParsing="false" styleClass="red-button" text="CLEAR" />
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" top="8.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+               </padding>
+            </VBox>
+         </children>
+      </FlowPane>
+   </content>
+</ScrollPane>

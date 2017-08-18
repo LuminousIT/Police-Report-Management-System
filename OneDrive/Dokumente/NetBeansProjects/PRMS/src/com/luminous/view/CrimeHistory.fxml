@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="contentPane" prefHeight="429.0" prefWidth="748.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.luminous.ctrl.CrimeHistory">
+   <children>
+      <TableView fx:id="crimeHistoryTable" prefHeight="429.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="chSnCol" prefWidth="48.0" text="S/N" />
+          <TableColumn fx:id="chNameCol" prefWidth="138.0" text="Name" />
+            <TableColumn fx:id="chPhoneCol" prefWidth="138.0" text="Phone Number" />
+            <TableColumn fx:id="chCrimeCol" prefWidth="98.0" text="Crime" />
+            <TableColumn fx:id="chDateCol" prefWidth="100.0" text="Date" />
+            <TableColumn fx:id="chStatementCol" prefWidth="120.0" text="Statement" />
+            <TableColumn fx:id="chCaseIdCol" prefWidth="120.0" text="CaseID" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="429.0" prefWidth="290.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane fx:id="filterScrollPane" prefHeight="439.0" prefViewportHeight="429.0" prefViewportWidth="277.0" style="-fx-background-color: #ddd;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <FlowPane fx:id="filterFlowPane" orientation="VERTICAL" prefWidth="290.0" style="-fx-background-color: #ddd;" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox spacing="10.0">
+                           <children>
+                              <Label text="Filter By">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <VBox>
+                                 <children>
+                                    <Label text="Name">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="chFilterField" />
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Label text="From Date">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker fx:id="fromDateFld" />
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Label text="To Date">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker fx:id="toDateFld" />
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Label text="Crime Category">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="chCrimeCat" prefHeight="33.0" prefWidth="245.0" promptText="Select a Crime" />
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Label text="Case ID">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="chCaseIdFld" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="printablePane" layoutX="146.0" prefHeight="429.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FlowPane fx:id="printableDetailsPane" prefHeight="354.0" prefWidth="262.0" style="-fx-background-color: #ddd;" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox prefWidth="260.0" spacing="8.0">
+                     <children>
+                        <Label fx:id="detailsName" text="Name:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detailsPhone" text="Phone:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detailsCrimeCat" text="Crime Category:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detailsCaseId" text="CaseID:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detailsDate" text="Date:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detailsStatement" text="Statement:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </FlowPane>
+            <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #ccc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Button fx:id="printBut" mnemonicParsing="false" styleClass="green-button" text="PRINT" />
+                  <Button fx:id="closeBut" mnemonicParsing="false" styleClass="red-button" text="CLOSE" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

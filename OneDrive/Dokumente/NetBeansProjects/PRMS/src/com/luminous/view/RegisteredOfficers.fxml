@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="regdOffBase" prefHeight="427.0" prefWidth="660.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.luminous.ctrl.RegisteredOfficers">
+   <children>
+      <TextField fx:id="filterField" promptText="Search" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TableView fx:id="officerTable" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+        <columns>
+          <TableColumn fx:id="serialCol" prefWidth="52.0" text="S/N" />
+          <TableColumn fx:id="rankCol" prefWidth="115.0" text="Rank" />
+            <TableColumn fx:id="nameCol" prefWidth="215.0" text="Name" />
+            <TableColumn fx:id="phoneCol" prefWidth="132.0" text="Phone Number" />
+            <TableColumn fx:id="detailActCol" prefWidth="132.0" text="Detail" />
+        </columns>
+      </TableView>
+      <AnchorPane fx:id="detailsPane" prefHeight="427.0" prefWidth="375.0" style="-fx-background-color: #ddd;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="regContent" alignment="CENTER" prefHeight="513.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FlowPane alignment="CENTER" prefHeight="48.0" prefWidth="323.0" style="-fx-background-color: #ccc;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE OFFICER INFO">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </FlowPane>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="320.0" prefWidth="323.0" styleClass="updatePane" VBox.vgrow="ALWAYS">
+                     <content>
+                        <FlowPane alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" vgap="10.0">
+                           <children>
+                              <VBox prefWidth="300.0" spacing="3.0">
+                                 <children>
+                                    <Label text="Rank" />
+                                    <ComboBox fx:id="updateRankCB" prefWidth="300.0" promptText="Select Rank" visibleRowCount="5" />
+                                 </children>
+                              </VBox>
+                              <VBox prefWidth="300.0" spacing="3.0">
+                                 <children>
+                                    <Label text="First Name" />
+                                    <TextField fx:id="updateFnameField" />
+                                 </children>
+                              </VBox>
+                              <VBox prefWidth="300.0" spacing="3.0">
+                                 <children>
+                                    <Label text="Last Name" />
+                                    <TextField fx:id="updateLnameField" />
+                                 </children>
+                              </VBox>
+                              <VBox prefWidth="300.0" spacing="3.0">
+                                 <children>
+                                    <Label text="Phone Number" />
+                                    <TextField fx:id="updatePhoneNumField" />
+                                 </children>
+                              </VBox>
+                              <VBox prefWidth="300.0" spacing="3.0">
+                                 <children>
+                                    <Label text="Address" />
+                                    <TextArea fx:id="updateAddressField" prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </FlowPane>
+                     </content>
+                  </ScrollPane>
+                  <HBox alignment="CENTER" prefHeight="52.0" prefWidth="363.0" spacing="10.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button fx:id="update" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" styleClass="green-button" text="Update">
+                           <padding>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="delete" mnemonicParsing="false" styleClass="red-button" text="Delete">
+                           <padding>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

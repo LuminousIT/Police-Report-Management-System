@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="682.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.luminous.ctrl.Homepage">
+   <children>
+      <FlowPane alignment="CENTER" prefWidth="200.0" style="-fx-background-color: #999;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Region layoutX="112.0" layoutY="9.0" prefHeight="56.0" prefWidth="61.0" style="-fx-shape: &quot;M32 13.414c0-6.279-1.837-11.373-4.109-11.413 0.009-0 0.018-0.001 0.027-0.001h-2.592c0 0-6.088 4.573-14.851 6.367-0.268 1.415-0.438 3.102-0.438 5.047s0.171 3.631 0.438 5.047c8.763 1.794 14.851 6.367 14.851 6.367h2.592c-0.009 0-0.018-0.001-0.027-0.001 2.272-0.040 4.109-5.134 4.109-11.413zM27.026 23.102c-0.293 0-0.61-0.304-0.773-0.486-0.395-0.439-0.775-1.124-1.1-1.979-0.727-1.913-1.127-4.478-1.127-7.223s0.4-5.309 1.127-7.223c0.325-0.855 0.705-1.54 1.1-1.979 0.163-0.182 0.48-0.486 0.773-0.486s0.61 0.304 0.773 0.486c0.395 0.439 0.775 1.124 1.1 1.979 0.727 1.913 1.127 4.479 1.127 7.223s-0.4 5.309-1.127 7.223c-0.325 0.855-0.705 1.54-1.1 1.979-0.163 0.181-0.48 0.486-0.773 0.486zM7.869 13.414c0-1.623 0.119-3.201 0.345-4.659-1.48 0.205-2.779 0.323-4.386 0.323-2.096 0-2.096 0-2.096 0l-1.733 2.959v2.755l1.733 2.959c0 0 0 0 2.096 0 1.606 0 2.905 0.118 4.386 0.323-0.226-1.458-0.345-3.036-0.345-4.659zM11.505 20.068l-4-0.766 2.558 10.048c0.132 0.52 0.648 0.782 1.146 0.583l3.705-1.483c0.498-0.199 0.698-0.749 0.444-1.221l-3.853-7.161zM27.026 17.148c-0.113 0-0.235-0.117-0.298-0.187-0.152-0.169-0.299-0.433-0.424-0.763-0.28-0.738-0.434-1.726-0.434-2.784s0.154-2.046 0.434-2.784c0.125-0.33 0.272-0.593 0.424-0.763 0.063-0.070 0.185-0.187 0.298-0.187s0.235 0.117 0.298 0.187c0.152 0.169 0.299 0.433 0.424 0.763 0.28 0.737 0.434 1.726 0.434 2.784s-0.154 2.046-0.434 2.784c-0.125 0.33-0.272 0.593-0.424 0.763-0.063 0.070-0.185 0.187-0.298 0.187z&quot;; -fx-background-color: white;" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="31.0" style="-fx-font-weight: bold; -fx-text-fill: white;" text="POLICE REPORT SYSTEM" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" left="15.0" right="15.0" top="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </FlowPane>
+      <ScrollPane layoutX="14.0" layoutY="95.0" prefHeight="389.0" prefWidth="212.0" style="-fx-border-width: 0 2 0 0; -fx-border-color: #999;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="95.0">
+         <content>
+            <FlowPane alignment="TOP_CENTER" orientation="VERTICAL" prefHeight="311.0" prefWidth="210.0" vgap="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #999; -fx-text-fill: yellow; -fx-font-weight: bold;" text="IG Muhammed">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <VBox prefHeight="134.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label onMouseClicked="#gotoNavHandler" prefHeight="17.0" prefWidth="100.0" styleClass="nav-bar" text="Register Officer" />
+                        <Label onMouseClicked="#gotoNavHandler" prefHeight="17.0" prefWidth="100.0" styleClass="nav-bar" text="Report Case" />
+                        <Label onMouseClicked="#gotoNavHandler" prefHeight="17.0" prefWidth="100.0" styleClass="nav-bar" text="Crime History" />
+                        <Label onMouseClicked="#gotoNavHandler" prefHeight="17.0" prefWidth="100.0" styleClass="nav-bar" text="Registered Officers" />
+                        <Separator prefWidth="200.0" style="-fx-background-color: #999; -fx-border: 2;" />
+                        <Label onMouseClicked="#gotoNavHandler" prefHeight="17.0" prefWidth="100.0" styleClass="nav-bar" text="Logout" />
+                        <Separator prefWidth="200.0" style="-fx-background-color: #999; -fx-border: 2;" />
+                        <Label onMouseClicked="#gotoNavHandler" prefHeight="17.0" prefWidth="100.0" styleClass="nav-bar" text="Contact Developer" />
+                     </children>
+                  </VBox>
+               </children>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane fx:id="contentPane" layoutX="211.0" layoutY="95.0" prefHeight="389.0" prefWidth="471.0" style="-fx-border-width: 0 0 0 2; -fx-border-color: #999;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0">
+         <children>
+            <FlowPane fx:id="loadingPane" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Region prefHeight="101.0" prefWidth="100.0" style="-fx-shape: &quot;M16 0c-8.711 0-15.796 6.961-15.995 15.624 0.185-7.558 5.932-13.624 12.995-13.624 7.18 0 13 6.268 13 14 0 1.657 1.343 3 3 3s3-1.343 3-3c0-8.837-7.163-16-16-16zM16 32c8.711 0 15.796-6.961 15.995-15.624-0.185 7.558-5.932 13.624-12.995 13.624-7.18 0-13-6.268-13-14 0-1.657-1.343-3-3-3s-3 1.343-3 3c0 8.837 7.163 16 16 16z&quot;; -fx-background-color: #ccc;" />
+               </children>
+            </FlowPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="statusPane" style="-fx-background-color: rgba(0, 0, 0, .7);" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="statusLabel" style="-fx-text-fill: white;" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

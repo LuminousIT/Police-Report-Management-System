@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 12, 2017, 12:09:32 PM
+    Author     : Luminous
+*/
+
+.text-field{
+    -fx-pref-width: 220px;
+    -fx-pref-height: 33px;
+    -fx-border-color: #bbb;
+    -fx-border-width: 1px;
+    -fx-background-radius: 0px;
+    -fx-prompt-text-fill: #999;
+    -fx-accent: #aaa;
+}
+
+.text-field:focused {
+    -fx-background-insets: 0;
+    -fx-background-color: white;
+    -fx-border-width: 1.5;
+    -fx-background-radius: 0;
+}
+
+.button {
+    -fx-background-radius: 0;
+    -fx-pref-width: 75;
+}
+
+.green-button {
+    -fx-base: green;
+    -fx-font-color: white;
+    -fx-pref-width: 100;
+}
+
+.red-button {
+    -fx-base: red;
+    -fx-font-color: white;
+    -fx-pref-width: 100;
+}
+
+.nav-bar {
+    -fx-font-size: 14px;
+    -fx-pref-width: 200;
+    -fx-pref-height: 35px;
+    -fx-padding: 5 20 5 20;
+}
+
+.nav-bar:hover {
+    -fx-background-color: #ccc;
+    
+}
+
+ScrollPane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-accent: transparent;
+    -fx-border: 0 1 0 0;
+}
+
+.updatePane {
+    -fx-padding: 16;
+}
+

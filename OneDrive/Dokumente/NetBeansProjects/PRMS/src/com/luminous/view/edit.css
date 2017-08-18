@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 16, 2017, 9:49:37 AM
+    Author     : Luminous
+*/
+
+.label {
+    -fx-font-size: 15px; 
+}
+
+.text-field, .text-field:focused, .text-area {
+    -fx-background-radius: 0;
+    -fx-pref-height: 35px;
+    -fx-border-width: 2;
+    -fx-border-color: #999;
+    -fx-accent: #ccc;
+    -fx-background-color: white;
+}
+
+.button {
+    -fx-background-radius: 0;
+    -fx-pref-width: 100;
+}
+
+.green-button {
+    -fx-base: green;
+    -fx-font-color: white;
+}
+
+.red-button {
+    -fx-base: red;
+    -fx-font-color: white;
+}
+
+.combo-box, .combo-box:focused {
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-border-width: 2;
+    -fx-border-color: #999;
+}
+
+.combo-box > .list-cell:hover {
+    -fx-text-fill: black;
+    
+}
