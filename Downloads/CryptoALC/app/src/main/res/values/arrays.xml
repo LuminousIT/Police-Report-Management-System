@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currency_array">
+        <item> BTC </item>
+        <item> ETH </item>
+    </string-array>
+
+    <string-array name="main_currency_array">
+        <item> Naira </item>
+        <item> Yen </item>
+        <item> Pounds </item>
+        <item> GHD </item>
+        <item> KYA </item>
+    </string-array>
+</resources>
